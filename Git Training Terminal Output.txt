@@ -1,0 +1,2197 @@
+Last login: Fri May 18 10:27:38 on console
+ prat14k@Prateeks-MacBook-Pro  ~  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ prat14k@Prateeks-MacBook-Pro  ~  cd Desktop/gitExercise1 
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  ls
+File1.txt File2.txt File3.txt
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git branches
+git: 'branches' is not a git command. See 'git --help'.
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git branch  
+  feature1
+* master
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat File1.txt 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track.  
+vinsoll track git
+vinsoll track git
+vinsoll track gitvinsoll track gitvinsoll track git vinsoll track gitvinsoll track git
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat >> File1.txt
+Dummy Text To add.Dummy Text To add. 
+Dummy Text To add.
+Dummy Text To add.Dummy Text To add.
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  cat File1.txt   
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track.  
+vinsoll track git
+vinsoll track git
+vinsoll track gitvinsoll track gitvinsoll track git vinsoll track gitvinsoll track git
+Dummy Text To add.Dummy Text To add. 
+Dummy Text To add.
+Dummy Text To add.Dummy Text To add.
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git checkout feature2
+error: pathspec 'feature2' did not match any file(s) known to git.
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git checkout feature1
+M	File1.txt
+Switched to branch 'feature1'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature1 ●  cat >> File1.txt      
+Vinsol Track Git . Vinsol Track Git
+Vinsol Track Git
+Vinsol Track GitVinsol Track GitVinsol Track Git
+Vinsol Track Git
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature1 ●  cat File1.txt     
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track.  
+vinsoll track git
+vinsoll track git
+vinsoll track gitvinsoll track gitvinsoll track git vinsoll track gitvinsoll track git
+Dummy Text To add.Dummy Text To add. 
+Dummy Text To add.
+Dummy Text To add.Dummy Text To add.
+Vinsol Track Git . Vinsol Track Git
+Vinsol Track Git
+Vinsol Track GitVinsol Track GitVinsol Track Git
+Vinsol Track Git
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature1 ●  git commit -m "File1 modified"
+On branch feature1
+Changes not staged for commit:
+	modified:   File1.txt
+
+no changes added to commit
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature1 ●  git add *                     
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature1 ✚  git commit -m "File1 modified"                 
+[feature1 5bd5276] File1 modified
+ 1 file changed, 7 insertions(+)
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature1  git checkout master
+Switched to branch 'master'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git status
+On branch master
+nothing to commit, working tree clean
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat File1.txt
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track.  
+vinsoll track git
+vinsoll track git
+vinsoll track gitvinsoll track gitvinsoll track git vinsoll track gitvinsoll track git
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git stash list
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat >> File1.txt              
+Dummy Text To add.Dummy Text To add. 
+Dummy Text To add.
+Dummy Text To add.Dummy Text To add.
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git add *     
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ✚  git commit -m "File1 modified"
+[master e800a04] File1 modified
+ 1 file changed, 3 insertions(+)
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git merge feature 1
+merge: feature - not something we can merge
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git merge feature1 
+Auto-merging File1.txt
+CONFLICT (content): Merge conflict in File1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●✚ >M<  cat File1.txt 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track.  
+vinsoll track git
+vinsoll track git
+vinsoll track gitvinsoll track gitvinsoll track git vinsoll track gitvinsoll track git
+Dummy Text To add.Dummy Text To add. 
+Dummy Text To add.
+Dummy Text To add.Dummy Text To add.
+<<<<<<< HEAD
+=======
+Vinsol Track Git . Vinsol Track Git
+Vinsol Track Git
+Vinsol Track GitVinsol Track GitVinsol Track Git
+Vinsol Track Git
+>>>>>>> feature1
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●✚ >M<  subl File1.txt
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●✚ >M<  git commit -m "Feature1 merged"
+U	File1.txt
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●✚ >M<  git add *                      
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ✚ >M<  git commit -m "Feature1 merged"
+[master 7c0e2dd] Feature1 merged
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git merge feature1            
+Already up to date.
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git checkout -b feature2
+Switched to a new branch 'feature2'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  clear
+
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  ls  
+File1.txt File2.txt File3.txt
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  cat >> File3.txt
+Rebase trialRebase trial 
+Rebase trial Rebase trial Rebase trial 
+Rebase trial Rebase trial 
+Rebase trial Rebase trial Rebase trial Rebase trial 
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2 ●  ls  
+File1.txt File2.txt File3.txt
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2 ●  git checkout master
+M	File3.txt
+Switched to branch 'master'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   File3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  cat File3.txt      
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text.
+Rebase trialRebase trial 
+Rebase trial Rebase trial Rebase trial 
+Rebase trial Rebase trial 
+Rebase trial Rebase trial Rebase trial Rebase trial 
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  clear
+
+
+
+
+
+
+
+
+
+
+
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git checkout feature2 
+M	File3.txt
+Switched to branch 'feature2'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2 ●  git checkout -- File3.txt
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  cat >> File3.txt         
+Rebase trial 
+Rebase trial Rebase trial Rebase trial 
+Rebase trial 
+Rebase trial Rebase trial Rebase trial Rebase trial 
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2 ●  cat File3.txt 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text.
+Rebase trial 
+Rebase trial Rebase trial Rebase trial 
+Rebase trial 
+Rebase trial Rebase trial Rebase trial Rebase trial 
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2 ●  git add *
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2 ✚  git commit -am "File 3 changes"
+[feature2 c840091] File 3 changes
+ 1 file changed, 4 insertions(+)
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  git checkout master
+Switched to branch 'master'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat File3.txt
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text.
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat >> File3.txt
+Conflict Arise
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  cat File3.txt   
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text.
+Conflict Arise
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git add File3.txt 
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ✚  git commit -m "File 3 changes" 
+[master 07da956] File 3 changes
+ 1 file changed, 1 insertion(+)
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git checkout feature2
+Switched to branch 'feature2'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  cat File3.txt          
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text.
+Rebase trial 
+Rebase trial Rebase trial Rebase trial 
+Rebase trial 
+Rebase trial Rebase trial Rebase trial Rebase trial 
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: File 3 changes
+Using index info to reconstruct a base tree...
+M	File3.txt
+.git/rebase-apply/patch:9: trailing whitespace.
+Rebase trial 
+.git/rebase-apply/patch:10: trailing whitespace.
+Rebase trial Rebase trial Rebase trial 
+.git/rebase-apply/patch:11: trailing whitespace.
+Rebase trial 
+.git/rebase-apply/patch:12: trailing whitespace.
+Rebase trial Rebase trial Rebase trial Rebase trial 
+warning: 4 lines add whitespace errors.
+Falling back to patching base and 3-way merge...
+Auto-merging File3.txt
+CONFLICT (content): Merge conflict in File3.txt
+error: Failed to merge in the changes.
+Patch failed at 0001 File 3 changes
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1  ➦ 07da956 ●✚ >R>  cat File3.txt
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text.
+<<<<<<< HEAD
+Conflict Arise
+=======
+Rebase trial 
+Rebase trial Rebase trial Rebase trial 
+Rebase trial 
+Rebase trial Rebase trial Rebase trial Rebase trial 
+>>>>>>> File 3 changes
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1  ➦ 07da956 ●✚ >R>  subl File3.txt
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1  ➦ 07da956 ●✚ >R>  git add File3.txt
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1  ➦ 07da956 ✚ >R>  git rebase --continue
+Applying: File 3 changes
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   feature2  git checkout master
+Switched to branch 'master'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git merge feature2 
+Updating 07da956..25404a8
+Fast-forward
+ File3.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat File3.txt
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text. This is for the Git track. 
+This is some dummy text. This is for the Git track.  This is some dummy text.
+
+Conflict Removed
+
+Rebase trial 
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cat >> File1.txt
+Stash Trial^[[C    
+Stash Trial Stash Trial Stash Trial Stash Trial 
+Stash Trial 
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git log --oneline
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git checkout e800a04
+error: Your local changes to the following files would be overwritten by checkout:
+	File1.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git stash
+Saved working directory and index state WIP on master: 25404a8 File 3 changes
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git checkout e800a04
+Note: checking out 'e800a04'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at e800a04... File1 modified
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1  ➦ e800a04  git log --oneline   
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1  ➦ e800a04  git checkout 25404a8
+Previous HEAD position was e800a04... File1 modified
+HEAD is now at 25404a8... File 3 changes
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1  ➦ 25404a8  git checkout master 
+Switched to branch 'master'
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git log --oneline   
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git status
+On branch master
+nothing to commit, working tree clean
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git stash apply
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ●  git add *
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master ✚  git commit -m "Stashed n final commit" 
+[master ef06343] Stashed n final commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git remote add origin git@github.com:prat14k/GitExercise1.git
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git pull origin master
+warning: no common commits
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 20 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+From github.com:prat14k/GitExercise1
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  git push origin master 
+To github.com:prat14k/GitExercise1.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:prat14k/GitExercise1.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise1   master  cd ..
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop  open .
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop  cd ../Documents/gitExercise1 
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git branch
+  feature1
+  feature2
+* master
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git log   
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git log --oneline 
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  clear       
+
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git pull origin master
+From github.com:prat14k/GitExercise1
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git --HELP  pull       
+Unknown option: --HELP
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git --help  pull
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git pull --allow-unrelated-histories origin master
+From github.com:prat14k/GitExercise1
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md | 458 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 458 insertions(+)
+ create mode 100644 README.md
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  ls  
+File1.txt File2.txt File3.txt README.md
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git log --oneline 
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git push origin master
+Counting objects: 36, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (36/36), 3.31 KiB | 1.10 MiB/s, done.
+Total 36 (delta 16), reused 0 (delta 0)
+remote: Resolving deltas: 100% (16/16), done.
+To github.com:prat14k/GitExercise1.git
+   6c5ddcf..178290c  master -> master
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   master  git checkout feature1
+Switched to branch 'feature1'
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  git push origin feature1
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/GitExercise1.git
+ * [new branch]      feature1 -> feature1
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  git push origin feature2
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/GitExercise1.git
+ * [new branch]      feature2 -> feature2
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  git log feature1
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  git log feature1 --oneline 
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  git log feature2 --oneline
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  clear
+
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ prat14k@Prateeks-MacBook-Pro  ~/Documents/gitExercise1   feature1  cd ..
+ prat14k@Prateeks-MacBook-Pro  ~/Documents  cd ..
+ prat14k@Prateeks-MacBook-Pro  ~  cd Desktop   
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop  mkdir gitExercise2 
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop  cd gitExercise2
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2  cat > File1.txt
+Exercise 2 
+Git tag Exercise 2
+Git track
+^C
+ ✘ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2  git init
+Initialized empty Git repository in /Users/prat14k/Desktop/gitExercise2/.git/
+ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  cat > File2.txt
+Exercise 2 
+Git tag Exercise 2
+Git track^[[C
+^Z
+[1]  + 4016 suspended  cat > File2.txt
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  rm File2.txt 
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  cat > File2.txt
+Git track
+Git trackGit track Git trackGit track
+Git track
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	File1.txt
+	File2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git add *      
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ✚  git commit -m "Initial Commit"
+[master (root-commit) 39a4d4c] Initial Commit
+ 2 files changed, 6 insertions(+)
+ create mode 100644 File1.txt
+ create mode 100644 File2.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git tag -a 1.0.0 -m "Version 1.0.0"
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git tag
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git tag 1.0.0
+fatal: tag '1.0.0' already exists
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  clear
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  nano File1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  cat File1.txt
+Vinsol track Exercise 2
+Git Exercise 2
+Git 
+jkabsd
+sd
+askd
+sadk sd a
+
+
+sakdnas
+kdns
+dkasnd
+aksda
+sdsandasdknasd lsa dj dka dslkands
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  nano File2.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  cat File2.txt 
+dkjs ds
+fsdf
+ dslf sdf m 
+
+;k 
+
+k  d;f ;ld fs;df
+k 
+kd f
+ fksd f
+dsf 
+d 
+
+
+Git track
+Git track
+ad,'asd
+ckGit trat track
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git tag -a 1.0.1 -m "Version 1.0.0"
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git tag                            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git log
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git tag -d 1.0.1
+Deleted tag '1.0.1' (was cbb4816)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git tag         
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   File1.txt
+	modified:   File2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git add * 
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ✚  git commit -m "Changes and improvements"
+[master 731bba8] Changes and improvements
+ 2 files changed, 30 insertions(+), 4 deletions(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git tag -a 1.0.1 -m "Version 1.0.1"
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  cat > File3.txt
+File 3 
+new tag 
+git tags tack             
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git add *
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ✚  git commit -m "New Feature" 
+[master d9ee0d7] New Feature
+ 1 file changed, 3 insertions(+)
+ create mode 100644 File3.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git tag -a 1.1.0 -m "Version 1.1.0"
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git tag                            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git checkout 1.0.1
+Note: checking out '1.0.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 731bba8... Changes and improvements
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2  ➦ 731bba8  git checkout -b v1.0.1_FIX
+Switched to a new branch 'v1.0.1_FIX'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   v1.0.1_FIX  cat >> File2.txt
+Tag detached head play
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   v1.0.1_FIX ●  git commit -am "Bug fix"
+[v1.0.1_FIX 1cdd232] Bug fix
+ 1 file changed, 1 insertion(+)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   v1.0.1_FIX  git tag -a 1.0.2 -m "Version 1.0.2"
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   v1.0.1_FIX  git tag
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   v1.0.1_FIX  git checkout master
+Switched to branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  cat >> File3.txt
+New changes 
+new Build Improvement
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master ●  git commit -am "New improvements to 1.1.0"
+[master d3c1802] New improvements to 1.1.0
+ 1 file changed, 2 insertions(+)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git tag -a 1.1.1 -m "Version 1.1.1"
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git push --follow-tags origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git remote add origin git@github.com:prat14k/GitExercise2.git
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git push --follow-tags origin master
+Counting objects: 18, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (18/18), 1.75 KiB | 897.00 KiB/s, done.
+Total 18 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:prat14k/GitExercise2.git
+ * [new branch]      master -> master
+ * [new tag]         1.0.0 -> 1.0.0
+ * [new tag]         1.0.1 -> 1.0.1
+ * [new tag]         1.1.0 -> 1.1.0
+ * [new tag]         1.1.1 -> 1.1.1
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  git push --follow-tags origin v1.0.1_FIX                     
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 461 bytes | 461.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:prat14k/GitExercise2.git
+ * [new branch]      v1.0.1_FIX -> v1.0.1_FIX
+ * [new tag]         1.0.2 -> 1.0.2
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  clear
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise2   master  cd ..
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop  ls 
+Exercise2 Log.md                         Screen Shot 2018-05-16 at 6.13.36 PM.png exerciseLog.md                           keys.txt
+Git track.pdf                            Xcode_9.3.xip                            git infrastructure.png                   personalWork
+POP Presentation.odp                     bg.jpeg                                  gitExercise1                             softwares
+ProtocolOP Points.txt                    companyWork                              gitExercise2                             training docs
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop  mkdir gitExercise3
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop  cd gitExercise3
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3  git init
+Initialized empty Git repository in /Users/prat14k/Desktop/gitExercise3/.git/
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3   master  mkdir project1 project2
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3   master  ls
+project1 project2
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3   master  cd project1
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git checkout -b staging
+Switched to a new branch 'staging'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  cat > Test1.txt
+This is the first commit
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git add *
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging ✚  git commit -m "First Commit"
+[staging (root-commit) e7a1ab3] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 project1/Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git push origin staging
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git remote add origin git@github.com:prat14k/Test_Project.git
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git push origin staging                                      
+Counting objects: 4, done.
+Writing objects: 100% (4/4), 288 bytes | 288.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+ * [new branch]      staging -> staging
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  cd ..
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3   staging  rm -rf .git
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3  cd project1
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ls
+Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  git init
+Initialized empty Git repository in /Users/prat14k/Desktop/gitExercise3/project1/.git/
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git add *
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master ✚  git commit -am "First Commit"
+[master (root-commit) 7b47417] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  rm -rf .got                       
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  rm -rf .git
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  clear           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  git init
+Initialized empty Git repository in /Users/prat14k/Desktop/gitExercise3/project1/.git/
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git checkout -b staging
+Switched to a new branch 'staging'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git add *
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging ✚  git commit -m "First Commit"
+
+[staging (root-commit) b280cf8] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git remote add origin git@github.com:prat14k/Test_Project.git
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git push origin staging
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+ * [new branch]      staging -> staging
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:prat14k/Test_Project.git'
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging       
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+                                                                                                                                                                                                            
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+                                                                                                                                                                                                            
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+                                                                                                                                                                                                            
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  cd ..  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3  cd project1
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  cd ../project2
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2  git clone git@github.com:prat14k/Test_Project.git .
+Cloning into '.'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  ls
+Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  cat > Test1.txt
+This is second commit
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging ●  cat Test1.txt 
+This is second commit
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging ●  git add *
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging ✚  git commit -m "Second Commit" 
+[staging 38a48df] Second Commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  git push origin staging
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+   b280cf8..38a48df  staging -> staging
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  cd ../project1 
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  cat > Test1.txt
+This is third commit
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging ●  git commit -am "Third commit overrall"
+[staging 6adb522] Third commit overrall
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+                                                                                                                                                                                                            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+                                                                                                                                                                                                            
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+                                                                                                                                                                                                            
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+                                                                                                                                                                                                            
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging                                        
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git push origin staging 
+To github.com:prat14k/Test_Project.git
+ ! [rejected]        staging -> staging (fetch first)
+error: failed to push some refs to 'git@github.com:prat14k/Test_Project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git pull origin staging 
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:prat14k/Test_Project
+ * branch            staging    -> FETCH_HEAD
+   b280cf8..38a48df  staging    -> origin/staging
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging ●✚ >M<  cat Test1.txt 
+<<<<<<< HEAD
+This is third commit
+=======
+This is second commit
+>>>>>>> 38a48df9a0166e13241ee64f525d1d0aeb1240dd
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging ●✚ >M<  subl Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging ●✚ >M<  git add Test1.txt 
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging ✚ >M<  git commit -am "Pull Merge Conflict Removed"
+[staging e8b5e48] Pull Merge Conflict Removed
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:prat14k/Test_Project.git'
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git push origin staging
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 581 bytes | 581.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+   38a48df..e8b5e48  staging -> staging
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git checkout master
+error: pathspec 'master' did not match any file(s) known to git.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   staging  git checkout -b master
+Switched to a new branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git merge staging
+Already up to date.
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git checkout -b testing
+Switched to a new branch 'testing'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  cat Test1.txt 
+
+This is third commit. 
+Second commit was from project2/
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  cat > Test1.txt
+A is an alphabet
+^C
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing ●  git commit -am "char A"
+[testing 72bfe60] char A
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  subl Test1.txt 
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char B"
+[testing 8387cb9] char B
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char C"
+[testing f5ca8e2] char C
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char D"
+[testing 0992362] char D
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char E"
+[testing f11578a] char E
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char F"
+[testing 6ee9151] char F
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char G"
+[testing e335fcd] char G
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char H"
+[testing 1fc9b16] char H
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git push origin testing
+Counting objects: 24, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (24/24), 1.83 KiB | 936.00 KiB/s, done.
+Total 24 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+ * [new branch]      testing -> testing
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git push origin master 
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+ * [new branch]      master -> master
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git push origin master   
+Everything up-to-date
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git checkout master
+Switched to branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  subl Test1.txt 
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 1"
+[master ebe244e] number 1
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 2"
+[master a2d429f] number 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 3"
+[master 9b72173] number 3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 4"
+[master 927655a] number 4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 5"
+[master 787bda8] number 5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 6"
+[master 6a266c1] number 6
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 7"
+[master 47a2580] number 7
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 8"
+[master 6461d0e] number 8
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git push origin master
+Counting objects: 24, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (24/24), 1.80 KiB | 920.00 KiB/s, done.
+Total 24 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+   e8b5e48..6461d0e  master -> master
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git checkout testing
+Switched to branch 'testing'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git rebase master 
+First, rewinding head to replay your work on top of it...
+Applying: char A
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0001 char A
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 6461d0e ●✚ >R>  cat Test1.txt 
+<<<<<<< HEAD
+8 is a number
+=======
+A is an alphabet
+>>>>>>> char A
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 6461d0e ●✚ >R>  subl Test1.txt   
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 6461d0e ●✚ >R>  git commit -am Test1.txt
+[detached HEAD 921cbed] Test1.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed >R>  git rebase --continue
+Applying: char A
+No changes - did you forget to use 'git add'?
+If there is nothing left to stage, chances are that something else
+already introduced the same changes; you might want to skip this patch.
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed >R>  git rebase --skip    
+Applying: char B
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0002 char B
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed ●✚ >R>  git rebase --skip
+Applying: char C
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0003 char C
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed ●✚ >R>  
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed ●✚ >R>  git rebase --skip
+Applying: char D
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0004 char D
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed ●✚ >R>  subl Test1.txt          
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed ●✚ >R>  git add *
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 921cbed ✚ >R>  git commit -m "Char D"
+[detached HEAD 36d48ba] Char D
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba >R>  git rebase --skip     
+Applying: char E
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0005 char E
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba ●✚ >R>  subl Test1.txt        
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba ●✚ >R>  git rebase --skip
+Applying: char F
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0006 char F
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba ●✚ >R>  git rebase --skip
+Applying: char G
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0007 char G
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba ●✚ >R>  subl Test1.txt   
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba ●✚ >R>  subl Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba ●✚ >R>  git rebase --skip
+Applying: char H
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0008 char H
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 36d48ba ●✚ >R>  git commit -am "H added"
+[detached HEAD 06df884] H added
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 06df884 >R>  git rebase --continue
+Applying: char H
+No changes - did you forget to use 'git add'?
+If there is nothing left to stage, chances are that something else
+already introduced the same changes; you might want to skip this patch.
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 06df884 >R>  git checkout master
+Warning: you are leaving 3 commits behind, not connected to
+any of your branches:
+
+  06df884 H added
+  36d48ba Char D
+  921cbed Test1.txt
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 06df884
+
+Switched to branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master >R>  git merge 06df884
+Updating 6461d0e..06df884
+Fast-forward
+ Test1.txt | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master >R>  git checkout testing    
+Switched to branch 'testing'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing >R>  git rebase --continue
+Applying: char H
+No changes - did you forget to use 'git add'?
+If there is nothing left to stage, chances are that something else
+already introduced the same changes; you might want to skip this patch.
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing >R>  git rebase --skip    
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git rebase --continue
+No rebase in progress?
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git checkout master  
+Switched to branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear              
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git branch -d testing
+error: The branch 'testing' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D testing'.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git merge testing    
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master ●✚ >M<  git branch -D testing
+Deleted branch testing (was 1fc9b16).
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master ●✚ >M<  git log
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master ●✚ >M<  git reset --hard e8b5e48b611aac643483a4c8e3b3d5d28d00b778
+HEAD is now at e8b5e48 Pull Merge Conflict Removed
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git log
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  ls
+Test1.txt
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  cat test1.txt
+
+This is third commit. 
+Second commit was from project2/
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git push origin master
+To github.com:prat14k/Test_Project.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:prat14k/Test_Project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git push origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+ * [new branch]      master -> master
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git checkout -b testing
+Switched to a new branch 'testing'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  cat Test1.txt 
+
+This is third commit. 
+Second commit was from project2/
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  subl Test1.txt         
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char A"
+[testing 1624cc7] char A
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char B"
+[testing d63e6b5] char B
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char C"
+[testing bf42bfd] char C
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char D"
+[testing f1640ff] char D
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char E"
+On branch testing
+nothing to commit, working tree clean
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char E"
+[testing c33347b] char E
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char F"
+[testing 8c4c297] char F
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git commit -am "char G"
+[testing 71bf3a8] char G
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git checkout master    
+Switched to branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git push origin testing
+Counting objects: 21, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (21/21), 1.60 KiB | 546.00 KiB/s, done.
+Total 21 (delta 0), reused 0 (delta 0)
+To github.com:prat14k/Test_Project.git
+ * [new branch]      testing -> testing
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  cat Test1.txt 
+
+This is third commit. 
+Second commit was from project2/
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clea 
+zsh: command not found: clea
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master ●  clear
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master ●  git commit -am "number 1"
+[master 03c296f] number 1
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 2"
+[master 0b74328] number 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 3"
+[master 9e85d83] number 3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 4"
+[master 377acc1] number 4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 5"
+[master 80c7a1d] number 5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 6"
+[master 23201ab] number 6
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git commit -am "number 7"
+[master 8c9b791] number 7
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git checkout testing
+Switched to branch 'testing'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: char A
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0001 char A
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 8c9b791 ●✚ >R>  git rebase --continue 
+Test1.txt: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 8c9b791 ●✚ >R>  cat Test1.txt 
+<<<<<<< HEAD
+7 is a number
+=======
+A is a character
+>>>>>>> char A
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 8c9b791 ●✚ >R>  git add *
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 8c9b791 ✚ >R>  git rebase --continue
+Applying: char A
+Applying: char B
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0002 char B
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 0d67b5e ●✚ >R>  git add *            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 0d67b5e ✚ >R>  git rebase --continue
+Applying: char B
+Applying: char C
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0003 char C
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 8106292 ●✚ >R>  git add *            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 8106292 ✚ >R>  git rebase --continue
+Applying: char C
+Applying: char D
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0004 char D
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ fddb3b9 ●✚ >R>  git add *            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ fddb3b9 >R>  git rebase --continue
+Applying: char D
+No changes - did you forget to use 'git add'?
+If there is nothing left to stage, chances are that something else
+already introduced the same changes; you might want to skip this patch.
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ fddb3b9 >R>  git rebase --skip
+Applying: char E
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0005 char E
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ fddb3b9 ●✚ >R>  git add *            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ fddb3b9 ✚ >R>  git rebase --continue
+Applying: char E
+Applying: char F
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0006 char F
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 5c62fd0 ●✚ >R>  git rebase --skip    
+Applying: char G
+Using index info to reconstruct a base tree...
+M	Test1.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Test1.txt
+CONFLICT (content): Merge conflict in Test1.txt
+error: Failed to merge in the changes.
+Patch failed at 0007 char G
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 5c62fd0 ●✚ >R>  git add *            
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1  ➦ 5c62fd0 ✚ >R>  git rebase --continue
+Applying: char G
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   testing  git checkout master
+Switched to branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  git merge testing
+Updating 8c9b791..77dbee4
+Fast-forward
+ Test1.txt | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  cat Test1.txt 
+A is a character
+7 is a number
+B is a character
+C is a character
+E is a character
+G is a character%                                                                                                                                                                                            ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  clear
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project1   master  cd ../project2 
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  git checkout --track origin/testing
+fatal: 'origin/testing' is not a commit and a branch 'testing' cannot be created from it
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  git --help branch                  
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  git branch --track testing origin/testing
+error: the requested upstream branch 'origin/testing' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+ ✘ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  git fetch origin
+remote: Counting objects: 27, done.
+remote: Compressing objects: 100% (10/10), done.
+Unpacking objects: 100% (27/27), done.
+remote: Total 27 (delta 0), reused 27 (delta 0), pack-reused 0
+From github.com:prat14k/Test_Project
+   38a48df..e8b5e48  staging    -> origin/staging
+ * [new branch]      master     -> origin/master
+ * [new branch]      testing    -> origin/testing
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  git branch --track testing origin/testing
+Branch 'testing' set up to track remote branch 'testing' from 'origin'.
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   staging  git checkout master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Switched to a new branch 'master'
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   master  git merge testing
+Updating e8b5e48..71bf3a8
+Fast-forward
+ Test1.txt | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   master  cat Test1.txt      
+G is a character%                                                                                                                                                                                            ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   master  clear
+
+
+
+
+
+
+ ⚙ prat14k@Prateeks-MacBook-Pro  ~/Desktop/gitExercise3/project2   master  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
