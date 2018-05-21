@@ -490,5 +490,7 @@ Fast-forward
         
 
 
+#### \# testing branch is a tracking branch which is made just for purposes like feature testing or other stuff. If the testing is finished, the project can be deployed or hence, pushed to the main branch(master) for other to pull from. 
 
+#### \# Changes made in testing branch can be merged with master via Merge or Rebase. Merge will simply create a new commit and merge the latest commits of both branches to that commit(it doesn't change the history of the commits). But Rebasing will  create a new commit using the commits of the branch to rebase, add onto the commits list of the branch, thus changing the origin of the commits.
 
