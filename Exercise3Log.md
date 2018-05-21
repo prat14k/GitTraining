@@ -111,12 +111,12 @@ This is third commit ^C
 
 
 **(staging)$ git push origin staging**          
-To github.com:prat14k/Test_Project.git
-&nbsp;&nbsp;! [rejected]  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      staging -> staging (fetch first)
-error: failed to push some refs to 'git@github.com:prat14k/Test_Project.git'
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
+To github.com:prat14k/Test_Project.git         
+&nbsp;&nbsp;! [rejected]  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      staging -> staging (fetch first)         
+error: failed to push some refs to 'git@github.com:prat14k/Test_Project.git'         
+hint: Updates were rejected because the remote contains work that you do         
+hint: not have locally. This is usually caused by another repository pushing         
+hint: to the same ref. You may want to first integrate the remote changes         
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.          
 
@@ -159,20 +159,20 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 **(testing)$ git commit -am "char A"**                    
 [testing b2aa562] char A
- 1 file changed, 1 insertion(+), 1 deletion(-)         
+ 1 file changed, 1 insertion(+), 1 deletion(-)                  
 
 
-**(testing)$ git commit -am "char B"**           
-[testing 0517657] char B       
- 1 file changed, 1 insertion(+), 1 deletion(-)         
+**(testing)$ git commit -am "char B"**                    
+[testing 0517657] char B                
+ 1 file changed, 1 insertion(+), 1 deletion(-)                  
 
 
-**(testing)$ git commit -am "char C"**           
+**(testing)$ git commit -am "char C"**                    
 [testing 65f2827] char C         
- 1 file changed, 1 insertion(+), 1 deletion(-)         
+ 1 file changed, 1 insertion(+), 1 deletion(-)                  
 
 
-**(testing)$ git commit -am "char D"**           
+**(testing)$ git commit -am "char D"**                    
 [testing 6cc8a5a] char D         
  1 file changed, 1 insertion(+), 1 deletion(-)         
 
@@ -192,11 +192,11 @@ no changes added to commit (use "git add" and/or "git commit -a")
  1 file changed, 1 insertion(+), 1 deletion(-)         
 
 **(testing)$ git push origin testing**           
-Counting objects: 21, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (14/14), done.
-Writing objects: 100% (21/21), 1.82 KiB | 933.00 KiB/s, done.
-Total 21 (delta 0), reused 0 (delta 0)
+Counting objects: 21, done.         
+Delta compression using up to 8 threads.         
+Compressing objects: 100% (14/14), done.         
+Writing objects: 100% (21/21), 1.82 KiB | 933.00 KiB/s, done.         
+Total 21 (delta 0), reused 0 (delta 0)         
 To github.com:prat14k/Test_Project.git
  &nbsp;&nbsp;\* [new branch]      testing -> testing  
  
@@ -307,104 +307,104 @@ To abort and get back to the state before "git rebase", run "git rebase --abort"
 
 **$ git add Test1.txt**             
 
-**$ git rebase --continue**           
-Applying: number 2
-Applying: number 3
-Using index info to reconstruct a base tree...
-M	Test1.txt
-Falling back to patching base and 3-way merge...
-Auto-merging Test1.txt
-CONFLICT (content): Merge conflict in Test1.txt
-error: Failed to merge in the changes.
-Patch failed at 0003 number 3
-The copy of the patch that failed is found in: .git/rebase-apply/patch
+**$ git rebase --continue**                    
+Applying: number 2         
+Applying: number 3         
+Using index info to reconstruct a base tree...         
+M	Test1.txt         
+Falling back to patching base and 3-way merge...         
+Auto-merging Test1.txt         
+CONFLICT (content): Merge conflict in Test1.txt         
+error: Failed to merge in the changes.         
+Patch failed at 0003 number 3         
+The copy of the patch that failed is found in: .git/rebase-apply/patch         
 
-Resolve all conflicts manually, mark them as resolved with
-"git add/rm <conflicted_files>", then run "git rebase --continue".
-You can instead skip this commit: run "git rebase --skip".
-To abort and get back to the state before "git rebase", run "git rebase --abort".
+Resolve all conflicts manually, mark them as resolved with         
+"git add/rm <conflicted_files>", then run "git rebase --continue".         
+You can instead skip this commit: run "git rebase --skip".         
+To abort and get back to the state before "git rebase", run "git rebase --abort".         
 
 
-**$ git add Test1.txt**           
+**$ git add Test1.txt**                    
 
-**$ git rebase --continue**           
-Applying: number 3
-Applying: number 4
-Using index info to reconstruct a base tree...
-M	Test1.txt
-Falling back to patching base and 3-way merge...
-Auto-merging Test1.txt
-CONFLICT (content): Merge conflict in Test1.txt
-error: Failed to merge in the changes.
-Patch failed at 0004 number 4
-The copy of the patch that failed is found in: .git/rebase-apply/patch
+**$ git rebase --continue**                    
+Applying: number 3         
+Applying: number 4         
+Using index info to reconstruct a base tree...         
+M	Test1.txt         
+Falling back to patching base and 3-way merge...         
+Auto-merging Test1.txt         
+CONFLICT (content): Merge conflict in Test1.txt         
+error: Failed to merge in the changes.         
+Patch failed at 0004 number 4         
+The copy of the patch that failed is found in: .git/rebase-apply/patch         
 
-Resolve all conflicts manually, mark them as resolved with
-"git add/rm <conflicted_files>", then run "git rebase --continue".
-You can instead skip this commit: run "git rebase --skip".
-To abort and get back to the state before "git rebase", run "git rebase --abort".
-
-**$ git add Test1.txt**           
-
-**$ git rebase --continue**           
-Applying: number 4
-Applying: number 5
-Using index info to reconstruct a base tree...
-M	Test1.txt
-Falling back to patching base and 3-way merge...
-Auto-merging Test1.txt
-CONFLICT (content): Merge conflict in Test1.txt
-error: Failed to merge in the changes.
-Patch failed at 0005 number 5
-The copy of the patch that failed is found in: .git/rebase-apply/patch
-
-Resolve all conflicts manually, mark them as resolved with
-"git add/rm <conflicted_files>", then run "git rebase --continue".
-You can instead skip this commit: run "git rebase --skip".
-To abort and get back to the state before "git rebase", run "git rebase --abort".
+Resolve all conflicts manually, mark them as resolved with         
+"git add/rm <conflicted_files>", then run "git rebase --continue".         
+You can instead skip this commit: run "git rebase --skip".         
+To abort and get back to the state before "git rebase", run "git rebase --abort".         
 
 **$ git add Test1.txt**           
 
 **$ git rebase --continue**           
-Applying: number 5
-Applying: number 6
-Using index info to reconstruct a base tree...
-M	Test1.txt
-Falling back to patching base and 3-way merge...
-Auto-merging Test1.txt
-CONFLICT (content): Merge conflict in Test1.txt
-error: Failed to merge in the changes.
-Patch failed at 0006 number 6
-The copy of the patch that failed is found in: .git/rebase-apply/patch
+Applying: number 4         
+Applying: number 5         
+Using index info to reconstruct a base tree...         
+M	Test1.txt         
+Falling back to patching base and 3-way merge...         
+Auto-merging Test1.txt         
+CONFLICT (content): Merge conflict in Test1.txt         
+error: Failed to merge in the changes.         
+Patch failed at 0005 number 5         
+The copy of the patch that failed is found in: .git/rebase-apply/patch         
 
-Resolve all conflicts manually, mark them as resolved with
-"git add/rm <conflicted_files>", then run "git rebase --continue".
-You can instead skip this commit: run "git rebase --skip".
-To abort and get back to the state before "git rebase", run "git rebase --abort".
+Resolve all conflicts manually, mark them as resolved with         
+"git add/rm <conflicted_files>", then run "git rebase --continue".         
+You can instead skip this commit: run "git rebase --skip".         
+To abort and get back to the state before "git rebase", run "git rebase --abort".         
+
+**$ git add Test1.txt**                    
+
+**$ git rebase --continue**                    
+Applying: number 5         
+Applying: number 6         
+Using index info to reconstruct a base tree...         
+M	Test1.txt         
+Falling back to patching base and 3-way merge...         
+Auto-merging Test1.txt         
+CONFLICT (content): Merge conflict in Test1.txt         
+error: Failed to merge in the changes.         
+Patch failed at 0006 number 6         
+The copy of the patch that failed is found in: .git/rebase-apply/patch         
+
+Resolve all conflicts manually, mark them as resolved with         
+"git add/rm <conflicted_files>", then run "git rebase --continue".         
+You can instead skip this commit: run "git rebase --skip".         
+To abort and get back to the state before "git rebase", run "git rebase --abort".         
 
 **$ git add Test1.txt**        
 
-**$ git rebase --continue**           
-Applying: number 6
-Applying: number 7
-Using index info to reconstruct a base tree...
-M	Test1.txt
-Falling back to patching base and 3-way merge...
-Auto-merging Test1.txt
-CONFLICT (content): Merge conflict in Test1.txt
-error: Failed to merge in the changes.
-Patch failed at 0007 number 7
-The copy of the patch that failed is found in: .git/rebase-apply/patch
+**$ git rebase --continue**                    
+Applying: number 6         
+Applying: number 7         
+Using index info to reconstruct a base tree...         
+M	Test1.txt         
+Falling back to patching base and 3-way merge...         
+Auto-merging Test1.txt         
+CONFLICT (content): Merge conflict in Test1.txt         
+error: Failed to merge in the changes.         
+Patch failed at 0007 number 7         
+The copy of the patch that failed is found in: .git/rebase-apply/patch         
+         
+Resolve all conflicts manually, mark them as resolved with         
+"git add/rm <conflicted_files>", then run "git rebase --continue".         
+You can instead skip this commit: run "git rebase --skip".         
+To abort and get back to the state before "git rebase", run "git rebase --abort".         
 
-Resolve all conflicts manually, mark them as resolved with
-"git add/rm <conflicted_files>", then run "git rebase --continue".
-You can instead skip this commit: run "git rebase --skip".
-To abort and get back to the state before "git rebase", run "git rebase --abort".
+**$ git add Test1.txt**                    
 
-**$ git add Test1.txt**           
-
-**$ git rebase --continue**           
-Applying: number 7
+**$ git rebase --continue**                    
+Applying: number 7         
     
 
     
